@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>Removes Powered By OpenCart</name>
+  <version>1.0</version>
+  <author>pfdevilliers</author>
+  <link>http://github.com/pfdevilliers/oc_mod_remove_powered_by</link>
+  <file path="catalog/language/english/common/footer.php">
+    <operation>
+      <search><![CDATA[$_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';]]></search>
+      <add position="replace"><![CDATA[$_['text_powered']      = '%s &copy; %s';]]></add>
+    </operation>
+  </file>
+</modification>
